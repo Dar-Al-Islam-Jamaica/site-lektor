@@ -13,13 +13,14 @@
     </div>
     <nav>
       <ul class="nav navbar-nav">
-        <!-- <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li> -->
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Home</a></li>
         {% for href, title in [
-          ['/news', 'News'],
-          ['/masajid', 'Mosques (Masajid)'],
+          ['/masajid', 'Mosques of Jamaica'],
           ['/articles', 'Articles'],
-          ['/classes', 'Classes']
+          ['/classes', 'Classes'],
+          ['/news', 'News'],
+          ['/donate', 'Donate']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
@@ -34,8 +35,7 @@
     <nav>
       <ul class="nav navbar-nav">
         {% for href, title in [
-          ['/about', 'About'],
-          ['/donate', 'Donate'],
+          ['/about', 'About DIJ'],
           ['/contact', 'Contact']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif

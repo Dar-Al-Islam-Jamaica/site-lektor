@@ -1,0 +1,2 @@
+# Ignore the directory for build output during development
+_static-build/

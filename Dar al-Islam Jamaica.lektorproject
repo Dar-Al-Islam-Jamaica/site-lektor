@@ -2,3 +2,8 @@
 name = Dar al-Islam Jamaica
 url = http://daralislamjamaica.pages.dev
 url_style = absolute
+
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US

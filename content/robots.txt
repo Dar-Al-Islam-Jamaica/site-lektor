@@ -6,8 +6,6 @@ User-agent: *
 Allow: /
 Disallow: /*.css$
 Disallow: /*.js$
-Disallow: /*.py$
-Disallow: /*.ipynb$
 Disallow: /*.ttf$
 Disallow: /*.woff$
 Disallow: /*.woff2$
