@@ -4,7 +4,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — Dar al-Islam Jamaica</title>
+<title>{% block title %}Welcome{% endblock %} to Dar al-Islam Jamaica</title>
 <body>
   <header>
     <div class="logo">
@@ -19,7 +19,6 @@
           ['/masajid', 'Mosques of Jamaica'],
           ['/articles', 'Articles'],
           ['/classes', 'Classes'],
-          ['/news', 'News'],
           ['/donate', 'Donate']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
@@ -36,6 +35,7 @@
       <ul class="nav navbar-nav">
         {% for href, title in [
           ['/about', 'About DIJ'],
+          ['/news', 'News'],
           ['/contact', 'Contact']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif

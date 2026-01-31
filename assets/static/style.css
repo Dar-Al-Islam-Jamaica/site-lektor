@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gentium', 'GentiumAlt', 'Verdana', sans-serif;
+    font-family: 'Gentium', 'Verdana', sans-serif;
     /* margin: 50px 25px; */
 }
 
@@ -22,31 +22,31 @@ header, footer {
 .logo {
     display: flex;
     align-items: center;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 
 .logo img {
-    height: 70px; /* Adjust logo size */
+    height: 90px; /* Adjust logo size */
 }
 
 .logo h1 {
     color: #169bbd;
-    margin: 0 20px;
+    margin: 0 25px;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 50px;
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 15px 0 0;
+    margin: 0 35px 0 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 footer nav ul {
@@ -57,9 +57,9 @@ footer nav ul {
 
 footer nav ul li {
     display: inline;
-    margin: 0 15px 0 0;
+    margin: 0 30px 0 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 div.page {
@@ -68,4 +68,5 @@ div.page {
     background: #f1fbfe;
     padding: 20px 30px;
     background: #f1fbfe;
+    font-size: 23px;
 }
