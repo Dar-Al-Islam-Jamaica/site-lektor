@@ -1,55 +1,87 @@
+/* ---- Base / reset-ish ---- */
+* { box-sizing: border-box; }
+
 body {
-    font-family: 'Gentium', 'Verdana', sans-serif;
-    /* margin: 50px 25px; */
+    font-family: 'Gentium', system-ui, -apple-system, 'Verdana', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #e5f3da;
+    /* margin: 0; */ /* margin: 50px 25px; */
 }
 
 a {
-    color: #2a99b6;
+    color: #111; /* #2a99b6 */
     text-decoration: none;
 }
 
 a:hover {
-    color: #33bbdf;
+    color: #111; /* #33bbdf */
 }
 
 header, footer {
-    /* width: 760px; */
+    width: 100%; /* width: 760px; */
     margin: 0 auto;
-    background: #daeef3;
+    background: #f6d75b; /* #daeef3 */
+    border-bottom: none;
+    display: inline-block;
     padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    /* z-index: 10; */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin: 0px auto;
+    padding: 10px 15px;
+}
+
+.clear {
+    clear: both;
 }
 
 .logo {
-    display: flex;
     align-items: center;
-    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 10px 15px;
 }
 
 .logo img {
-    height: 90px; /* Adjust logo size */
+    height: 59px; /* Adjust logo size */
+    max-height: 90px;
+    object-fit: contain;
 }
 
 .logo h1 {
-    color: #169bbd;
+    color: #111; /* #169bbd */
     margin: 0 25px;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 1.5625rem; /* 25px with 1rem being 16px */
 }
 
 header nav ul {
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    margin: 5px 0;
-    padding: 0;
+    margin: 0px auto;
+    padding: 11.1px 15px;
 }
 
 header nav ul li {
     display: inline;
+    font-size: 1.4375rem; /* 23px */
     margin: 0 35px 0 0;
     padding: 0;
-    font-size: 23px;
 }
 
 footer nav ul {
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
     margin: 20px 0;
     padding: 0;
@@ -57,16 +89,22 @@ footer nav ul {
 
 footer nav ul li {
     display: inline;
-    margin: 0 30px 0 0;
+    font-size: 1.3125rem; /* 21px */
+    margin: 0 35px 0 0;
     padding: 0;
-    font-size: 21px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 div.page {
-    /* width: 760px; */
+    background: #fefef1; /* #f1fbfe */
+    font-size: 1.4375rem; /* 23px */
     margin: 0 auto;
-    background: #f1fbfe;
+    max-height: 100%;
     padding: 20px 30px;
-    background: #f1fbfe;
-    font-size: 23px;
+    /* width: 760px; */
 }
