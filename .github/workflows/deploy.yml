@@ -25,11 +25,11 @@ jobs:
 
       - run: pip install lektor
       - run: lektor build -O build
-        working-directory: site-lektor-master/site-lektor-master
+        working-directory: _static-build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site-lektor-master/site-lektor-master/build
+          path: _static-build
           name: github-pages
 
 
