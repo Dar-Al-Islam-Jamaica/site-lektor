@@ -24,7 +24,7 @@ jobs:
           python-version: "3.11"
 
       - run: pip install lektor
-      - run: lektor build -O build
+      - run: lektor build -O _static-build
         working-directory: _static-build
 
       - uses: actions/upload-pages-artifact@v3
