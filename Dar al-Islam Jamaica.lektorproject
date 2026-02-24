@@ -1,6 +1,6 @@
 [project]
 name = Dar al-Islam Jamaica
-url = http://daralislamjamaica.pages.dev
+url = https://dar-al-islam-jamaica.github.io/site-lektor/
 url_style = absolute
 
 [alternatives.en]
